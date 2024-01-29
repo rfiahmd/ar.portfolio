@@ -1,0 +1,76 @@
+form {
+    margin-top: -40px;
+}
+
+.input-box {
+    display: flex;
+    justify-content: space-between;
+}
+
+.input-box .input-field {
+    width: 48.5%;
+}
+
+.field .item {
+    width: calc(100%);
+    padding: 8px;
+    background: transparent;
+    border: 2px solid rgb(0, 132, 255);
+    outline: none;
+    border-radius: 6px;
+    color: #000000;
+    margin: 8px 0;
+    transition: border-color 0.3s, color 0.3s;
+}
+
+.field.error .item {
+    border-color: #ff1a1a;
+    color: #ff1a1a;
+}
+
+.field .item:placeholder {
+    color: rgba(255, 255, 255, .3);
+}
+
+.field .error-text {
+    font-size: 14.5px;
+    color: #ff1a1a;
+    text-align: left;
+    margin: -5px 0 10px;
+    display: none;
+    transition: color 0.3s;
+}
+
+form .textarea-field .error-text {
+    margin-top: -10px;
+}
+
+
+
+form .textarea-field .item {
+    resize: none;
+    height: 60px;
+    padding: 8px;
+    transition: border-color 0.3s, color 0.3s;
+}
+
+form button {
+    margin-top: -20px;
+    padding: 8px 16px;
+    background: rgb(0, 132, 255);
+    border: none;
+    outline: none;
+    border-radius: 6px;
+    box-shadow: 0 0 10px rgb(0, 132, 255);
+    font-size: 14px;
+    color: #ffffff;
+    letter-spacing: 1px;
+    font-weight: 600;
+    cursor: pointer;
+    margin-top: 20px;
+    transition: .5s;
+}
+
+form button:hover {
+    box-shadow: none;
+}
